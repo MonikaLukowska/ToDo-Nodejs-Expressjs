@@ -1,0 +1,7 @@
+{"message":"user.generateAuthtokoen is not a function","stack":"TypeError: user.generateAuthtokoen is not a function\n    at /Users/sebastian/Desktop/WP Monia/coderscamp/nodejs/ToDoNodejs/routes/users.js:33:24\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)","level":"error","timestamp":"2019-12-18T11:47:06.097Z"}
+{"message":"user.generateAuthTokoen is not a function","stack":"TypeError: user.generateAuthTokoen is not a function\n    at /Users/sebastian/Desktop/WP Monia/coderscamp/nodejs/ToDoNodejs/routes/users.js:33:24\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)","level":"error","timestamp":"2019-12-18T11:48:59.799Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-12-18T12:53:03.447Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-12-18T12:54:18.253Z"}
+{"level":"info","message":"Connected to MongoDB...","timestamp":"2019-12-18T12:54:18.321Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-12-18T12:55:57.748Z"}
+{"level":"info","message":"Connected to MongoDB...","timestamp":"2019-12-18T12:55:57.848Z"}

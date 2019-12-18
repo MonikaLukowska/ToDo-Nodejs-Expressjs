@@ -7,10 +7,10 @@ const router = express.Router();
 
 
 
-router.get('/me', auth, async (req, res) => {
-  //excluding password from response
+router.get('/me', auth, async (req, res, next) => {
+   //excluding password from response
     const user = await User.findById(req.user._id).select('-password')
-    res.send(user);
+    res.send(user);  
   });
   
   router.post('/', async (req, res) => {
@@ -29,7 +29,7 @@ router.get('/me', auth, async (req, res) => {
 
     _.pick(user, ['name', 'email'])
 
-    const token = user.generateAuthtokoen();
+    const token = user.generateAuthToken();
     res.header('x-auth-token', token).send(_.pick(user, ['_id', 'name', 'email']));  
   });
   

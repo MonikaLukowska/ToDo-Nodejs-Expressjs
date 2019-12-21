@@ -12,5 +12,6 @@ module.exports = function() {
   })
   .then(() => winston.info(`Connected to ${db}..`))
   .catch(err => {
-    winston.info(`DB Connection Error: ${err.message}`);
+    winston.info(`DB Connection Error: ${err.message}`)});
+  
 }

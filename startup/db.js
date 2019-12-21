@@ -5,7 +5,7 @@ const config = require('config')
 
 module.exports = function() {
   const db = config.get('db');
-mongoose.connect(db, {
+  mongoose.connect(process.env.db, {
   useNewUrlParser: true,
   useUnifiedTopology: true 
   })

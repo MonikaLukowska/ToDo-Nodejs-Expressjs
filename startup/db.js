@@ -8,7 +8,7 @@ module.exports = function() {
   console.log(db);
   mongoose.connect(db, {
   useNewUrlParser: true,
-  useUnifiedTopology: true 
+  useUnifiedTopology: false 
   })
   .then(() => winston.info(`Connected to ${db}..`))
 

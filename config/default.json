@@ -1,4 +1,4 @@
 {
     "jwtPrivateKey": "",
-    "db": "mongodb://localhost/ToDoList"
+    "db": "ToDoList_db"
 }

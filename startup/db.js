@@ -11,4 +11,6 @@ module.exports = function() {
 		useUnifiedTopology: true
   })
   .then(() => winston.info(`Connected to ${db}..`))
+  .catch(err => {
+    winston.info(`DB Connection Error: ${err.message}`);
 }

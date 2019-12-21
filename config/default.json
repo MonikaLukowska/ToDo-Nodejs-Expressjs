@@ -1,4 +1,4 @@
 {
-    "jwtPrivateKey": "",
+    "jwtPrivateKey": "ToDoList_jwtPrivateKey",
     "db": "ToDoList_db"
 }

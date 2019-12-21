@@ -8,10 +8,9 @@ module.exports = function() {
   mongoose.connect(db, {
     useCreateIndex: true,
 		useNewUrlParser: true,
-		useUnifiedTopology: true
+		useUnifiedTopology: false
   })
   .then(() => winston.info(`Connected to ${db}..`))
   .catch(err => {
     winston.info(`DB Connection Error: ${err.message}`)});
-  
-}
+  }

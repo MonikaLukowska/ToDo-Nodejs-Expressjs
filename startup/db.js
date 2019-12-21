@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 
 module.exports = function() {
-mongoose.connect('db', {
+mongoose.connect('mongodb://localhost/ToDoList', {
   useNewUrlParser: true,
   useUnifiedTopology: true 
   })

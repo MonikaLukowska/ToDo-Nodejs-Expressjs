@@ -18,7 +18,7 @@ const router = express.Router();
     const validPassword = await bcrypt.compare(req.body.password, user.password);
     if (!validPassword) return res.status(400).send('invalid email or password');
 
-    const token = user.generateAuthtokoen();
+    const token = user.generateAuthToken();
 
     res.send(token);
   });
